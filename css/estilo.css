@@ -48,6 +48,7 @@ header .contenedor {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 header .navbar {
@@ -70,15 +71,7 @@ header .menu_link {
     color: white;
 }
 
-
-#grid {
-    margin-right: 305px;
-    margin-left: 305px;
-    padding-bottom: 32px;
-
-}
-
-.contenedor-grid {
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -90,6 +83,16 @@ header .menu_link {
     width: 100%;
 }
 
+.grid {
+    padding-right: 305px;
+    padding-left: 305px;
+}
+
+.contenedor-grid {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
 
 .conoce {
     grid-area: conoce;
@@ -98,7 +101,7 @@ header .menu_link {
     height: 650px;
     background-repeat: no-repeat;
     background-size: cover;
-}
+    }
 
 .mira {
     grid-area: mira;
@@ -107,8 +110,9 @@ header .menu_link {
     height: 360px;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
 }
+
 .entrena {
     grid-area: entrena;
     background-image: url(../img/Banners-entrena-gratis-un-dia.bda30f67.jpg);
@@ -116,7 +120,8 @@ header .menu_link {
     height: 360px;
     background-repeat: no-repeat;
     background-size: cover;
-}
+    }
+
 
 .medicus {
     background-color: rgb(45, 43, 43);
@@ -239,41 +244,55 @@ header .menu_link {
 
 /*** SEDES ***/
 
-.sedes {
+.grid-sedes {
     display: grid;
-    color: white;
+    padding: 6rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
     grid-template-areas: 
-    "sede1 sede2 sede3 sede4";
-    text-align: center;
-    height: 500px;
+    "item1 item2 item3 item4";
     gap: 1rem;
-    padding-bottom: 20px;
-}
-
-.tituloprincipal-sedes {
-    padding: 25px 12px;
-    font-size: 10px;
 }
 
 
-.titulo-sedes {
-    font-size: 20px;
-}
 
-.grey {
+.grid_item {
+    border-radius: 2rem;
     background-color: grey;
+    height: 280px;
 }
 
-.border {
-    border-radius: 50px;
+.info-tarjetas {
+    display: flex;
+    justify-content: center;
 }
 
-.separador {
-    border: 1px solid white;
+.grid_item h2 {
+    display: flex;
+    justify-content: center;
 }
 
 
+.grid_item p {
+    color: white;
+}
+
+.grid_item1 {
+grid-area: item1;
+}
+
+.grid_item2 {
+grid-area: item2;
+}
+
+
+.grid_item3 {
+grid-area: item3;
+}
+
+.grid_item4 {
+grid-area: item4;
+}
 
 
 
@@ -357,25 +376,42 @@ header .menu_link {
 
 .kidsteens {
     display: flex;
-    margin-bottom: 1rem;
     justify-content: space-between;
-    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 }
 
 .imagen-kids {
     display: flex;
     background-size: cover;
-    width: 40%;
+}
+
+.completar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.subtitulo-kids {
+    font-size: 20px;
+    margin: 25px 40px;
 }
 
 .formulariokids {
-    
+    width: 100%;
     flex-direction: column;
-    height: 100vh;
-    overflow-y: scroll;
+    
 }
 
+.titulo-kids {
+    text-align: center;
+    font-size: 1.5rem;
+}
 
+.elegir-sede {
+    gap: 2rem;
+}
 
 
 
@@ -409,20 +445,139 @@ header .menu_link {
 
 .login {
     display: flex;
-    padding-top: 30px;
     flex-direction: row;
     justify-content: center;
+    gap: 2rem;
+    padding: 30px 20px;
 }
 
 .entrar {
+    padding-bottom: 20px;
     text-align: center;
     align-content: center;
     align-items: center;
 }
 
+.restablecer {
+    padding: 20px 0px;
+}
 
 /*** MEDIA ***/
 
-@media and (max-width: 480px) {
 
+
+@media screen and (max-width: 768px) {
+
+    .contenedor-grid {
+        max-width: 768px;
+    }
+
+    .grid-sedes {
+        font-size: 10px;
+        display: grid;
+        padding: 6rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "item1 item2 item3"
+        "item4 item5 item6";
+        gap: 1rem;
+        }
 }
+    
+
+@media screen and (max-width: 600px) {
+    
+    header .contenedor {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    header .logo {
+        margin: 0;
+        padding: 10px;
+    }
+
+    header .navbar {
+        flex-direction: column;
+        padding: 10px 0px;
+        gap: 10px;
+    }
+
+    .grid-sedes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-grid {
+        max-width: 600px;
+    }
+
+    .formulario input {
+        display: flex;
+
+        flex-direction: column;
+    }
+    .restablecer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+    header .contenedor {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    header .logo {
+        margin: 0;
+        padding: 10px;
+    }
+
+    header .navbar {
+        flex-direction: column;
+        padding: 10px 0px;
+        gap: 10px;
+    }
+
+    .grid-sedes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-grid {
+        max-width: 480px;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_footer {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 25px 0px;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .restablecer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+   
