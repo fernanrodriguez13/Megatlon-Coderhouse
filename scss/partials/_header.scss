@@ -1,0 +1,54 @@
+header {
+    background-color: $maincolor;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: sticky;
+    width: 100%;
+
+    .logo {
+    display: flex;
+    padding: 10px;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      .navbar {
+        display: flex;
+        text-align: center;
+        text-transform: uppercase;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+      }
+
+      .menu_item {
+        display: inline;
+        letter-spacing: 1px;
+      }
+
+      .menu_link {
+        padding: 18px 12px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .menu_link:hover {
+        text-decoration: overline;
+        gap: 2px;
+      }
+
+  }
+  

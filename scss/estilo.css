@@ -71,12 +71,6 @@ header .menu_link {
   color: white;
 }
 
-.menu_link:hover {
-  text-decoration: overline;
-  gap: 2px;
-}
-
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -237,9 +231,6 @@ header .menu_link {
   color: white;
 }
 
-
-
-
 /*** SEDES ***/
 .grid-sedes {
   display: grid;
@@ -366,8 +357,6 @@ header .menu_link {
   font-size: 14px;
   color: white;
   display: flex;
-  justify-content: center;
-  padding: 14px 12px;
 }
 
 .boton-enviar {
@@ -393,16 +382,11 @@ header .menu_link {
   background-size: cover;
 }
 
-.imagen-kids:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
-padding-bottom: 40px;}
-.imagen-kids {overflow:hidden;}
-
-
-
 .completar {
   display: flex;
   flex-direction: column;
   text-align: center;
+  gap: 2rem;
 }
 
 .subtitulo-kids {
@@ -445,7 +429,6 @@ padding-bottom: 40px;}
 }
 
 .imagen-rrhh {
-  width: 83,3333%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -565,6 +548,5 @@ padding-bottom: 40px;}
     flex-direction: column;
   }
 }
-
 
 /*# sourceMappingURL=estilo.css.map */

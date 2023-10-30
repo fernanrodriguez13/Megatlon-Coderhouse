@@ -1,0 +1,93 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "logo nav terminos";
+    padding: 30px 0px;
+    height: 260px;
+  }
+  
+  .footer_top {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    h2 {
+        font-size: 40px;
+        flex-direction: row;
+        color: white;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        }
+  }
+  
+  .columna1 {
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+  }
+  
+  .columna2 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .columna3 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .qrafip {
+    display: flex;
+    margin-top: 11px;
+  }
+  
+  .texto-footer {
+    font-size: 10px;
+    color: white;
+    padding-left: 5px;
+  }
+  
+  .nav_footer {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    a {
+        font-size: 14px;
+        font-weight: 900;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+      }
+  }
+  
+  .footer_link {
+    padding-bottom: 14px;
+    font-size: 14px;
+  }
+  
+  .imagenes-footer {
+    flex-direction: inline;
+  }
+  
+  
+  .terminos {
+    grid-area: terminos;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-column-start: 3;
+  
+    a {
+        text-decoration: none;
+        color: white;
+      }
+  }
+  
