@@ -71,6 +71,11 @@ header .menu_link {
   color: white;
 }
 
+header .menu_link:hover {
+  text-decoration: overline;
+  gap: 2px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -407,6 +412,9 @@ header .menu_link {
 .elegir-sede {
   gap: 2rem;
 }
+
+.imagen-kids:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
+padding-bottom: 35px;}
 
 /*** RRHH ***/
 .hero-rrhh {

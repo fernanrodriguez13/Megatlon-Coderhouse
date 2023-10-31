@@ -7,6 +7,14 @@
   line-height: 1.5;
 }
 
+body {
+  background-color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
 h2 {
   color: white;
 }
@@ -15,22 +23,13 @@ h1 {
   color: white;
 }
 
-a {
-  text-decoration: none;
-}
-
-body {
-  background-color: #000000;
-}
-
 header {
-  background-color: black;
+  background-color: #000000;
   padding-left: 2rem;
   padding-right: 2rem;
   position: sticky;
   width: 100%;
 }
-
 header .logo {
   display: flex;
   padding: 10px;
@@ -43,7 +42,6 @@ header .logo {
   color: white;
   text-decoration: none;
 }
-
 header .contenedor {
   display: flex;
   flex-direction: row;
@@ -51,7 +49,6 @@ header .contenedor {
   align-items: center;
   width: 100%;
 }
-
 header .navbar {
   display: flex;
   text-align: center;
@@ -59,23 +56,19 @@ header .navbar {
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
-
 header .menu_item {
   display: inline;
   letter-spacing: 1px;
 }
-
 header .menu_link {
   padding: 18px 12px;
   font-weight: bold;
   color: white;
 }
-
-.menu_link:hover {
+header .menu_link:hover {
   text-decoration: overline;
   gap: 2px;
 }
-
 
 .grid {
   display: grid;
@@ -144,7 +137,6 @@ header .menu_link {
   height: 100px;
 }
 
-/*** FOOTER ***/
 .footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -161,7 +153,6 @@ header .menu_link {
   grid-column-start: 1;
   grid-column-end: 2;
 }
-
 .footer_top h2 {
   font-size: 40px;
   flex-direction: row;
@@ -206,7 +197,6 @@ header .menu_link {
   grid-column-start: 2;
   grid-column-end: 3;
 }
-
 .nav_footer a {
   font-size: 14px;
   font-weight: 900;
@@ -231,270 +221,11 @@ header .menu_link {
   justify-content: center;
   grid-column-start: 3;
 }
-
 .terminos a {
   text-decoration: none;
   color: white;
 }
 
-
-
-
-/*** SEDES ***/
-.grid-sedes {
-  display: grid;
-  padding: 6rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row: 1fr 1fr 1fr;
-  grid-template-areas: "item1 item2 item3 item4";
-  gap: 1rem;
-}
-
-.grid_item {
-  border-radius: 2rem;
-  background-color: grey;
-  height: 280px;
-}
-
-.info-tarjetas {
-  display: flex;
-  justify-content: center;
-}
-
-.grid_item h2 {
-  display: flex;
-  justify-content: center;
-}
-
-.grid_item p {
-  color: white;
-}
-
-.grid_item1 {
-  grid-area: item1;
-}
-
-.grid_item2 {
-  grid-area: item2;
-}
-
-.grid_item3 {
-  grid-area: item3;
-}
-
-.grid_item4 {
-  grid-area: item4;
-}
-
-.text-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1.25rem;
-}
-
-.info-tarjetas {
-  display: flex;
-  margin-bottom: 8px;
-  margin-right: 4px;
-}
-
-.sedes-subrayado:hover {
-  text-decoration: underline;
-}
-
-.sedes-direccion {
-  text-decoration: underline;
-}
-
-/*** PASE DE PRUEBA ***/
-.titulo-prueba {
-  text-transform: uppercase;
-  padding-left: 42px;
-}
-
-.formulario {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.conteiner {
-  display: flex;
-  flex-direction: column;
-  grid-gap: 2rem;
-}
-
-.col1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.col2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.col3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.formulario input {
-  border: 1px solid white;
-  background-color: black;
-  padding-bottom: 0.5rem;
-  padding-top: 0.75rem;
-  padding-right: 80px;
-  padding-left: 50px;
-}
-
-.enviar {
-  padding-top: 60px;
-  padding-bottom: 200px;
-  text-align: center;
-}
-
-.texto-formulario {
-  font-size: 14px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  padding: 14px 12px;
-}
-
-.boton-enviar {
-  background-color: white;
-  border-radius: 45px;
-  text-transform: uppercase;
-  font-weight: 700;
-  width: 16rem;
-  height: 2.5rem;
-  outline: 2px solid transparent;
-}
-
-/*** KIDS TEENS ***/
-.kidsteens {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-}
-
-.imagen-kids {
-  display: flex;
-  background-size: cover;
-}
-
-.imagen-kids:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
-padding-bottom: 40px;}
-.imagen-kids {overflow:hidden;}
-
-
-
-.completar {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.subtitulo-kids {
-  font-size: 20px;
-  margin: 25px 40px;
-}
-
-.formulariokids {
-  width: 100%;
-  flex-direction: column;
-}
-
-.titulo-kids {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.elegir-sede {
-  gap: 2rem;
-}
-
-/*** RRHH ***/
-.hero-rrhh {
-  margin-top: 50px;
-}
-
-.main-titulo {
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  padding: 12px;
-}
-
-.texto-parrafo {
-  display: flex;
-  color: white;
-  font-size: 28px;
-  align-content: center;
-  justify-content: center;
-}
-
-.imagen-rrhh {
-  width: 83,3333%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.nuestramision h1 {
-  color: white;
-  font-size: 1.5rem;
-}
-
-.nuestramision p {
-  color: white;
-  font-size: 1.25rem;
-}
-
-/*** LOGIN ***/
-.login {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 2rem;
-  padding: 30px 20px;
-}
-
-.entrar {
-  padding-bottom: 20px;
-  text-align: center;
-  align-content: center;
-  align-items: center;
-}
-
-.restablecer {
-  padding: 20px 0px;
-}
-
-/*** MEDIA ***/
-@media (max-width: 768px) {
-  .contenedor-grid {
-    max-width: 768px;
-  }
-  .grid-sedes {
-    font-size: 10px;
-    display: grid;
-    padding: 6rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr 1fr 1fr;
-    grid-template-areas: "item1 item2 item3" "item4 item5 item6";
-    gap: 1rem;
-  }
-}
 @media (max-width: 600px) {
   header .contenedor {
     flex-direction: column;
@@ -525,7 +256,7 @@ padding-bottom: 40px;}
     flex-direction: column;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) and (max-width: 480px) {
   header .contenedor {
     flex-direction: column;
     align-items: center;
@@ -565,6 +296,5 @@ padding-bottom: 40px;}
     flex-direction: column;
   }
 }
-
 
 /*# sourceMappingURL=estilo.css.map */
