@@ -362,6 +362,8 @@ header .menu_link:hover {
   font-size: 14px;
   color: white;
   display: flex;
+  justify-content: center;
+  padding: 20px 12px 10px 5px;
 }
 
 .boton-enviar {
@@ -409,8 +411,8 @@ header .menu_link:hover {
   font-size: 1.5rem;
 }
 
-.elegir-sede {
-  gap: 2rem;
+.elegir-sede input {
+  gap: 25px;
 }
 
 .imagen-kids:hover {-webkit-transform:scale(1.1);transform:scale(1.1);
@@ -434,6 +436,7 @@ padding-bottom: 35px;}
   font-size: 28px;
   align-content: center;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 .imagen-rrhh {
@@ -441,14 +444,24 @@ padding-bottom: 35px;}
   margin-right: auto;
 }
 
+.nuestramision {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .nuestramision h1 {
+display: flex;
   color: white;
   font-size: 1.5rem;
+  justify-content: center;
+
 }
 
 .nuestramision p {
+  display: flex;
   color: white;
   font-size: 1.25rem;
+  justify-content: center;
 }
 
 /*** LOGIN ***/
